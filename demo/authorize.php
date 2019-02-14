@@ -34,7 +34,7 @@
 	<a href="apitest.php?token=<?=$token?>">点击查看通用接口调用测试页面</a>
 	<p>设备借还页面</p>
 	<div>查看当前个人信息</div>
-	<div>借设备</div>
-	<div>还设备</div>
+	<button>借设备</button>
+	<button>还设备</button>
 </body>
 </html>
