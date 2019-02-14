@@ -69,36 +69,6 @@ $api->bind($token);
 			<td><a href="https://o.yiban.cn/wiki/index.php?page=user/is_real" target="_blank">查看</a></td>
 		</tr>
 		<tr>
-			<td colspan=4>好友分组接口</td>
-		</tr>
-		<tr>
-			<td>获取当前用户好友列表</td>
-			<td>$api->request('friend/me_list', array('page'=>1,'count'=>3));</td>
-			<td><?php var_dump($api->request('friend/me_list', array('page'=>1,'count'=>3)));?></td>
-			<td><a href="https://o.yiban.cn/wiki/index.php?page=friend/me_list" target="_blank">查看</a></td>
-		</tr>
-		<tr>
-			<td>当前用户与指定用户是否为好友关系</td>
-			<td>$api->request('friend/check', array('yb_friend_uid'=>1));</td>
-			<td><?php var_dump($api->request('friend/check', array('yb_friend_uid'=>1)));?></td>
-			<td><a href="https://o.yiban.cn/wiki/index.php?page=friend/me_list" target="_blank">查看</a></td>
-		</tr>
-		<tr>
-			<td>获取推荐好友列表</td>
-			<td>$api->request('friend/recommend', array('count'=>3));</td>
-			<td><?php var_dump($api->request('friend/recommend', array('count'=>3)));?></td>
-			<td><a href="https://o.yiban.cn/wiki/index.php?page=friend/recommend" target="_blank">查看</a></td>
-		</tr>
-		<tr>
-			<td colspan=4>分享评论接口</td>
-		</tr>
-		<tr>
-			<td>获取当前用户动态列表</td>
-			<td>$api->request('share/me_list', array('page'=>1, 'count'=>3));</td>
-			<td><?php var_dump($api->request('share/me_list', array('page'=>1, 'count'=>3)));?></td>
-			<td><a href="https://o.yiban.cn/wiki/index.php?page=share/me_list" target="_blank">查看</a></td>
-		</tr>
-		<tr>
 			<td colspan=4>授权接口</td>
 		</tr>
 		<tr>
