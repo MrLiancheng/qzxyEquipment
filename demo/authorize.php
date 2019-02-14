@@ -33,7 +33,7 @@
 	<p><?php if (isset($token)&&$token){?>授权成功，点击下方链接查看通用接口测试<?php }?></p>
 	<a href="apitest.php?token=<?=$token?>">点击查看通用接口调用测试页面</a>
 	<p>设备借还页面</p>
-	<div>查看当前个人信息</div>
+	<div><a href="visitorInformation.php?token=<?=$token?>">查看当前个人信息</a></div>
 	<button>借设备</button>
 	<button>还设备</button>
 </body>
