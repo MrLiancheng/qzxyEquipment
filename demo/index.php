@@ -11,7 +11,7 @@
 			网站接入SDK使用DEMO
 		</p>
 		<p style="font-weight: bold;">
-			1、<a href="https://o.yiban.cn/manage/index" target="_blank">开放平台管理中心</a>左侧导航栏中选择"网站接入"中的网站（若无应用则创建新网站接入）
+			1、<a href="https://o.yiban.cn/manage/index" target="_blank">开放平台管理中心</a>
 		</p>
 		<p style="font-weight: bold;">
 			2、设置网站中的"授权回调地址"为此DEMO中authorize.php所在的URL

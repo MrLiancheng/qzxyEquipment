@@ -32,7 +32,9 @@
 <body>
 	<p><?php if (isset($token)&&$token){?>授权成功，点击下方链接查看通用接口测试<?php }?></p>
 	<a href="apitest.php?token=<?=$token?>">点击查看通用接口调用测试页面</a>
-	<p></p>
-	<a target="_blank" href="https://o.yiban.cn/wiki/index.php?page=%E7%BD%91%E7%AB%99%E6%8E%A5%E5%85%A5%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97">网站接入开发指南</a>
+	<p>设备借还页面</p>
+	<div>查看当前个人信息</div>
+	<div>借设备</div>
+	<div>还设备</div>
 </body>
 </html>
