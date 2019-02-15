@@ -1,0 +1,14 @@
+<table border="1" width="800px" align="center">
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>phone</th>
+    </tr>
+    {volist name="data" id="value"}
+    <tr>
+        <td>{$value.id}</td>
+        <td>{$value.username}</td>
+        <td>{$value.userphone}</td>
+    </tr>
+    {/volist}
+</table>
