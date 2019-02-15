@@ -3,12 +3,18 @@
         <th>id</th>
         <th>name</th>
         <th>phone</th>
+        <th>部门</th>
+        <th>在借数目</th>
+        <th>共借次数</th>
     </tr>
     {volist name="data" id="value"}
     <tr>
         <td>{$value.id}</td>
         <td>{$value.username}</td>
         <td>{$value.userphone}</td>
+        <td>{$value.userdepartment}</td>
+        <td>{$value.numtotlenow}</td>
+        <td>{$value.numtotle}</td>
     </tr>
     {/volist}
 </table>
