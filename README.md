@@ -39,3 +39,7 @@
 * 清泽心雨UED-JOHN
 
 # 易班接口测试[地址](http://tyutjohn.com/ybdemo/demo/)
+
+# 个人信息数据表说明
+* 数据表名为jh_userinformation
+* 数据库名为test
