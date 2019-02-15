@@ -1,6 +1,7 @@
 <?php
 $token = isset($token) ? $token : $_GET['token'];
-
+header('Content-Type:text/html;charset=UTF-8');
+$backValue=$_POST['trans_data'];
 /**
  * 包含SDK
  */
@@ -13,10 +14,11 @@ require_once 'config.php';
 $api = YBOpenApi::getInstance()->init($config['AppID'], $config['AppSecret'], $config['CallBack']);
 $api->bind($token);
 
-?>
+$content=$api->request('user/me');
+if(isset($backValue)){
+    $cont=json_encode($content,JSON_UNESCAPED_UNICODE);//转移成json,中文设置不自动转义
+    echo $cont;
+    //var_dump($content);//打印数组
+}
 
-<html>
-<body>
-    <div><?php var_dump($api->request('user/me'))?></div>
-</body>
-</html>
+?>
