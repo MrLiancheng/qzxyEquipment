@@ -43,16 +43,7 @@
 	$(function(){
 		$("#PerInfo").click(function(){
 			$.ajax({
-				url:"#",
-				type:"POST",
-				dataType:"json",
-				error:function(){
-                    alert("ajax请求错误");
-				},
-				success:function(data){
-					var dataObj=eval("("+data+")");
-                    alert(dataObj.yb_username);
-				}
+				url:''
 			});
 		});
 	});

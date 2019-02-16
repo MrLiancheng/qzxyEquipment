@@ -5,7 +5,7 @@ header('Content-Type:text/html;charset=UTF-8');
 /**
  * 包含SDK
  */
-require("../classes/yb-globals.inc.php");
+require("../../classes/yb-globals.inc.php");
 
 // 配置文件
 require_once 'config.php';
