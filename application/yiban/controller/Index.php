@@ -16,10 +16,11 @@ class Index extends Controller
 
     public function jhym()
     {
-        import('classes.yb-globals',EXTEND_PATH,'.inc.php');//tp5使用import引入文件，SDK在extend根目录下，自动加载
+        require "classes/yb-globals.inc.php";
 
         //配置文件
         require_once 'config.php';
+
         //初始化
         $api = YBOpenApi::getInstance()->init($config['AppID'], $config['AppSecret'], $config['CallBack']);
         $au = $api->getAuthorize();
@@ -29,10 +30,13 @@ class Index extends Controller
         if (!$info['status']) { //授权失败
             echo $info['msg'];
             die;
-        }
+        }else{
+            $this->redirect('yiban/index/jhym');
+		}
         $token = $info['token']; //网站接入获取的token
 
-        return view('jhym');
+	   // return view('jhym');
+       $this->fetch('index/jhym');
     }
 
 }
