@@ -19,7 +19,7 @@ class Index extends Controller
         require "classes/yb-globals.inc.php";
 
         //配置文件
-        require_once 'config.php';
+        require 'config.php';
 
         //初始化
         $api = YBOpenApi::getInstance()->init($config['AppID'], $config['AppSecret'], $config['CallBack']);
