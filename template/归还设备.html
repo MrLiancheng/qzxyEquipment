@@ -1,0 +1,103 @@
+<html>
+<head>
+    <link rel="stylesheet" href="ghsb.css"/>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <h1>归还设备</h1>
+        </div>
+        <div class="xj" >
+            <div class="xj-c">
+                <div class="qx"> 
+                    <h3>相机</h3>
+                    <div class="checkbox1">
+                            <label>
+                                <input type="checkbox" id="checkbox" onclick="show5()">
+                            </label>
+                    </div>
+                </div>
+                <div class="jn">
+                    <div class="imgbox"></div>
+                    <div class="word">
+                        <div class="subtitle"><b>U64538</b></div>
+                        <div class="record">佳能EOS80D</div>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="1" onclick="show1()"name="box"value="${article.id}">
+                        </label>
+                    </div>
+                </div>
+                <div class="jn">
+                    <div class="imgbox"></div>
+                    <div class="word">
+                        <div class="subtitle"><b>B10854</b></div>
+                        <div class="record">佳能EOS80D</div>
+                    </div>
+                    <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="2" onclick="show2()"name="box"value="${article.id}">
+                            </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mj" >
+            <div class="xj-c">
+               <h3>马甲</h3>
+               <div class="xmj">
+                    <div class="imgbox"></div>
+                    <div class="word2">
+                        <div class="subtitle"><b>马甲</b></div>
+                    </div>
+                    <div class="checkbox3">
+                            <label>
+                                <input type="checkbox" id="3" onclick="show3()"name="box"value="${article.id}">
+                            </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="qrsb">
+            <button class="btn" type="button" id="4" onclick="show4()">确认归还</button>
+
+        </div>
+    
+    </div>
+
+
+<script>
+    function show1() {
+        document.getElementById("4").style.background="#4c7aff";
+    }    
+        
+function show2() {
+        document.getElementById("4").style.background="#4c7aff";
+    }    
+function show3() {
+        document.getElementById("4").style.background="#4c7aff";
+    }    
+//全选部分
+function check(){
+        var checkbox = document.getElementById('checkbox');
+      checkbox.value==1?checkbox.value=2 : checkbox.value=1;
+
+     var checkboxs = document.getElementsById('1');
+
+     for(var i=0; i<checkboxs.length;i++){
+
+
+
+     if(checkbox.value==1){
+
+     checkboxs[i].checked=false;
+
+     }else{
+
+      checkboxs[i].checked=true;}}}
+</script>
+
+</body>
+
+</html>
