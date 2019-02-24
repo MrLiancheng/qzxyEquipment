@@ -1,0 +1,130 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.Subject-of-Equipment-Loan-System{
+    height: 140em;
+    width: 100%;
+    background: -webkit-linear-gradient(
+            top,#82f3ae,#cae275
+    );
+}
+
+.main{
+    padding: 400px 24px 86px 24px;
+}
+
+.public-header{
+    width: 100%;
+    background-color: #dffae3;
+    border-radius:200px 200px 0 0;
+    position: relative;
+    box-shadow: 0 8px 50px -15px;
+}
+
+.head-sculpture{
+    border-radius:100px;
+    height: 240px;
+    width: 240px;
+    position: absolute;
+    left: 50%;
+    margin-left: -120px;
+    margin-top: -120px;
+}
+
+.girl{
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+    overflow: hidden;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-image: url("img/girl.png");
+}
+
+.name{
+    font-size: 80px;
+    text-align: center;
+    padding-top: 148px;
+    color: #444444;
+}
+
+.studentId{
+    font-size: 44px;
+    text-align: center;
+    margin-top: 36px;
+    color: #666666;
+}
+
+.hr-line-div{
+    margin:24px auto;
+    height: 2px;
+    width: 94%;
+    background: radial-gradient(#4b9fff 10%, white 100%);
+    opacity: 0.7;
+}
+
+.public-header-option{
+    margin-top: 40px;
+}
+
+.lease{
+    height: 300px;
+    width: 400px;
+    display: inline-block;
+    background-color: #4c7aff;
+    border-radius: 30px;
+}
+
+.return{
+    height: 300px;
+    width: 400px;
+    display: inline-block;
+    background-color: #9caa9b;
+    border-radius: 30px;
+    margin-bottom: 58px;
+    margin-left: 50px;
+}
+
+.lease-text{
+    color: #fff;
+    font-size: 100px;
+    line-height: 300px;
+}
+
+.public-neck{
+    width: 100%;
+    background-color: #dffae3;
+    border-radius:20px;
+    position: relative;
+    margin-top: 86px;
+}
+
+
+.text{
+    font-size: 60px;
+    border-bottom: 1px solid #848484;
+    line-height: 150px;
+    display: block;
+    margin: 0 20px;
+}
+
+.text+.text{
+    border-top:1px solid #848484;
+}
+
+.text a{
+    color: #444444;
+    display: block;
+}
+
+.text:last-child{
+    border-bottom: none;
+}
