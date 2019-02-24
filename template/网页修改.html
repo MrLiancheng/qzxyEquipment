@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" href="借设备.css" rel="stylesheet" charset="UTF-8">
+    <title>借设备</title>
+</head>
+
+<body>
+    <div class="background">
+        <div class="header">借设备</div>
+        <div class="content">
+            <div class="content-left">
+                <div style="margin-top: 160px">
+                    <div class="onclick"style="padding-top: 10px"id="onclick1">
+                        <div class="square1" style="margin-top: 48px" onclick="show1()"></div>
+                        <div style="font-size: 40px;text-align: center;margin-top: 0px;color: black;">相机</div>
+                    </div>
+                </div>
+                <div style="margin-top: 0px">
+                    <div class="onclick"style="padding-top: 10px;background: none"id="onclick2">
+                        <div class="square1" style="margin-top: 48px" onclick="show2()"></div>
+                        <div style="font-size: 40px;text-align: center;margin-top: 0px;color: black;">电池</div>
+                    </div>
+                </div>
+                <div style="margin-top: 0px">
+                    <div class="onclick" style="padding-top: 10px;background: none"id="onclick3">
+                        <div class="square1" style="margin-top: 48px" onclick="show3()"></div>
+                        <div style="font-size: 40px;text-align: center;margin-top: 0px;color: black;">三脚架</div>
+                    </div>
+                </div>
+            </div><div class="content-right">
+                <div id="camera" style="display: block">
+                <div>
+                    <div class="square2" style="margin-left: 40px;margin-top: 50px;display: inline-block"></div>
+                    <div style="display: inline-block;vertical-align: top;margin-top: 50px;font-size: 40px">
+                        <div style="margin-left: 30px;margin-top: 50px;font-size: 60px;color: #2f2f2f"><strong>A10861</strong></div>
+                        <div style="display: inline-block;margin-left: 30px;color: #3e3e3e">佳能</div>
+                        <div style="display: inline-block;color: #3e3e3e"><strong>EOS80D</strong></div>
+                    </div>
+                    <div class="checkbox"style="display: inline-block">
+                        <input type="checkbox" id="checkboxInput1" name=""style="display: none">
+                        <label for="checkboxInput1"></label>
+                    </div>
+
+                </div>
+                <div>
+                    <div class="square2" style="margin-left: 40px;margin-top: 50px;display: inline-block"></div>
+                    <div style="display: inline-block;margin-top: 100px;vertical-align: top;font-size: 40px">
+                        <div style="margin-left: 30px;color: #2f2f2f;font-size: 60px"><strong>B10854</strong></div>
+                        <div style="display: inline-block;margin-left: 30px;color: #3e3e3e">佳能</div>
+                        <div style="display: inline-block;color: #3e3e3e"><strong>EOS80D</strong></div>
+                    </div>
+                    <div class="checkbox"style="display: inline-block">
+                        <input type="checkbox" id="checkboxInput2" name=""style="display: none">
+                        <label for="checkboxInput2"></label>
+                    </div>
+                </div>
+                <div>
+                    <div class="square2" style="margin-left: 40px;margin-top: 50px;display: inline-block"></div>
+                    <div style="display: inline-block;margin-top: 100px;vertical-align: top;font-size: 40px;">
+                        <div style="margin-left: 30px;color: #2f2f2f;font-size: 60px"><strong>U64538</strong></div>
+                        <div style="display: inline-block;margin-left: 30px;color: #3e3e3e">佳能</div>
+                        <div style="display: inline-block;color: #3e3e3e;font-size: 40px"><strong>EOS80D</strong></div>
+                    </div>
+                    <div class="checkbox"style="display: inline-block">
+                        <input type="checkbox" id="checkboxInput3" name=""style="display: none">
+                        <label for="checkboxInput3"></label>
+                    </div>
+                </div>
+                <div>
+                    <div class="square2" style="margin-left: 40px;margin-top: 50px;display: inline-block"></div>
+                    <div style="font-size: 40px;display: inline-block;margin-top: 100px;vertical-align: top">
+                        <div style="margin-left: 30px;color: #2f2f2f;font-size: 60px"><strong>CU4994</strong></div>
+                        <div style="display: inline-block;margin-left: 30px;color: #3e3e3e;">佳能</div>
+                        <div style="display: inline-block;color: #3e3e3e"><strong>EOS80D</strong></div>
+                    </div>
+                    <div class="checkbox"style="display: inline-block">
+                        <input type="checkbox" id="checkboxInput4" name=""style="display: none">
+                        <label for="checkboxInput4"></label>
+                    </div>
+                </div>
+        </div>
+                <div id="batter" style="display: none">
+                <div>
+                    <div class="square2" style="margin-left: 40px;margin-top: 50px;display: inline-block"></div>
+                    <div style="font-size: 40px;display: inline-block;vertical-align: top;margin-top: 50px">
+                        <div style="margin-left: 30px;margin-top: 50px;color: #2f2f2f;font-size: 60px"><strong>A10861</strong></div>
+                        <div style="display: inline-block;margin-left: 30px;color: #3e3e3e;">电池</div>
+                        <div style="display: inline-block;color: #3e3e3e"><strong>EOS80D</strong></div>
+                    </div>
+                    <div class="checkbox"style="display: inline-block">
+                        <input type="checkbox" id="checkboxInput5" name=""style="display: none">
+                        <label for="checkboxInput5"></label>
+                    </div>
+
+                </div>
+                <div>
+                    <div class="square2" style="margin-left: 40px;margin-top: 50px;display: inline-block"></div>
+                    <div style="font-size: 40px;display: inline-block;margin-top: 100px;vertical-align: top">
+                        <div style="margin-left: 30px;color: #2f2f2f;font-size: 60px"><strong>B10854</strong></div>
+                        <div style="display: inline-block;margin-left: 30px;color: #3e3e3e;">电池</div>
+                        <div style="display: inline-block;color: #3e3e3e"><strong>EOS80D</strong></div>
+                    </div>
+                    <div class="checkbox"style="display: inline-block">
+                        <input type="checkbox" id="checkboxInput6" name=""style="display: none">
+                        <label for="checkboxInput6"></label>
+                    </div>
+                </div>
+                <div>
+                    <div class="square2" style="margin-left: 40px;margin-top: 50px;display: inline-block"></div>
+                    <div style="font-size: 40px;display: inline-block;margin-top: 100px;vertical-align: top">
+                        <div style="margin-left: 30px;color: #2f2f2f;font-size: 60px"><strong>U64538</strong></div>
+                        <div style="display: inline-block;margin-left: 30px;color: #3e3e3e;">电池</div>
+                        <div style="display: inline-block;color: #3e3e3e"><strong>EOS80D</strong></div>
+                    </div>
+                    <div class="checkbox"style="display: inline-block">
+                        <input type="checkbox" id="checkboxInput7" name=""style="display: none">
+                        <label for="checkboxInput7"></label>
+                    </div>
+                </div>
+                <div>
+                    <div class="square2" style="margin-left: 40px;margin-top: 50px;display: inline-block"></div>
+                    <div style="font-size: 40px;display: inline-block;margin-top: 100px;vertical-align: top">
+                        <div style="margin-left: 30px;color: #2f2f2f;font-size: 60px"><strong>CU4994</strong></div>
+                        <div style="display: inline-block;margin-left: 30px;color: #3e3e3e;">电池</div>
+                        <div style="display: inline-block;color: #3e3e3e"><strong>EOS80D</strong></div>
+                    </div>
+                    <div class="checkbox"style="display: inline-block">
+                        <input type="checkbox" id="checkboxInput8" name=""style="display: none">
+                        <label for="checkboxInput8"></label>
+                    </div>
+                </div>
+            </div>
+                <div id="tripod" style="display: none">
+                <div>
+                    <div class="square2" style="margin-left: 40px;margin-top: 50px;display: inline-block"></div>
+                    <div style="display: inline-block;vertical-align: top;margin-top: 50px;font-size: 40px">
+                        <div style="margin-left: 30px;margin-top: 50px;color: #2f2f2f;font-size: 60px"><strong>A10861</strong></div>
+                        <div style="display: inline-block;margin-left: 30px;color: #3e3e3e">三脚架</div>
+                    </div>
+                    <div class="checkbox"style="display: inline-block">
+                        <input type="checkbox" id="checkboxInput9" name=""style="display: none">
+                        <label for="checkboxInput9"></label>
+                    </div>
+                </div>
+                <div>
+                    <div class="square2" style="margin-left: 40px;margin-top: 50px;display: inline-block"></div>
+                    <div style="font-size: 40px;display: inline-block;margin-top: 100px;vertical-align: top">
+                        <div style="margin-left: 30px;color: #2f2f2f;font-size: 60px"><strong>B10854</strong></div>
+                        <div style="display: inline-block;margin-left: 30px;color: #3e3e3e;">三脚架</div>
+                        <div style="display: inline-block;color: #3e3e3e"><strong>EOS80D</strong></div>
+                    </div>
+                    <div class="checkbox"style="display: inline-block">
+                        <input type="checkbox" id="checkboxInput10" name=""style="display: none">
+                        <label for="checkboxInput10"></label>
+                    </div>
+                </div>
+                <div>
+                    <div class="square2" style="margin-left: 40px;margin-top: 50px;display: inline-block"></div>
+                    <div style="font-size: 40px;display: inline-block;margin-top: 100px;vertical-align: top">
+                        <div style="margin-left: 30px;color: #2f2f2f;font-size: 60px"><strong>U64538</strong></div>
+                        <div style="display: inline-block;;color: #3e3e3e;margin-left: 30px;">三脚架</div>
+                        <div style="display: inline-block;color: #3e3e3e"><strong>EOS80D</strong></div>
+                    </div>
+                    <div class="checkbox"style="display: inline-block">
+                        <input type="checkbox" id="checkboxInput11" name=""style="display: none">
+                        <label for="checkboxInput11"></label>
+                    </div>
+                </div>
+                <div>
+                    <div class="square2" style="margin-left: 40px;margin-top: 50px;display: inline-block"></div>
+                    <div style="font-size: 40px;display: inline-block;margin-top: 100px;vertical-align: top">
+                        <div style="margin-left: 30px;color: #2f2f2f;font-size: 60px"><strong>CU4994</strong></div>
+                        <div style="display: inline-block;margin-left: 30px;color: #3e3e3e">三脚架</div>
+                        <div style="display: inline-block;color: #3e3e3e"><strong>EOS80D</strong></div>
+                    </div>
+                    <div class="checkbox"style="display: inline-block">
+                        <input type="checkbox" id="checkboxInput12" name=""style="display: none">
+                        <label for="checkboxInput12"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="footer-left">
+            </div>
+            <div class="footer-right">选好了</div>
+        </div>
+    </div>
+        <script>
+            function show1() {
+                document.getElementById("camera").style.display="block";
+                document.getElementById("batter").style.display="none";
+                document.getElementById("tripod").style.display="none";
+                document.getElementById("onclick1").style.background="white";
+                document.getElementById("onclick2").style.background="none";
+                document.getElementById("onclick3").style.background="none";
+
+            }
+            function show2() {
+                document.getElementById("batter").style.display="block";
+                document.getElementById("camera").style.display="none";
+                document.getElementById("tripod").style.display="none";
+                document.getElementById("onclick2").style.background="white";
+                document.getElementById("onclick1").style.background="none";
+                document.getElementById("onclick3").style.background="none";
+            }
+            function show3() {
+                document.getElementById("tripod").style.display="block";
+                document.getElementById("camera").style.display="none";
+                document.getElementById("batter").style.display="none";
+                document.getElementById("onclick3").style.background="white";
+                document.getElementById("onclick1").style.background="none";
+                document.getElementById("onclick2").style.background="none";
+            }
+        </script>
+        <script>
+
+        </script>
+</body>
+</html>
